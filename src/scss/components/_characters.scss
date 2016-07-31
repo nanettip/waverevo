@@ -1,0 +1,21 @@
+#characters {
+    margin: 10px 0px;
+}
+
+.char-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.char-block {
+    width: 150px;
+    height: 175px;
+    text-align: center;
+    margin: 5px 5px;
+
+    img {
+        width: 150px;
+    }
+}

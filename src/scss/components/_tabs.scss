@@ -1,0 +1,8 @@
+.tab-pane {
+
+    text-align: center;
+
+    &:not(.active) {
+        display: none;
+    }
+}

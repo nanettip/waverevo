@@ -1,0 +1,60 @@
+body > header > nav {
+    @extend .navbar;
+    @extend .navbar-default;
+
+    background-color: #fff;
+    border-width: 1px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 1;
+    top: 0;
+    margin: 20px auto;
+
+    @media (min-width: 768px) {
+        width: $site-width;
+        position: fixed;
+        }
+
+    .container-fluid {
+        padding: 0;
+        
+        .navbar-brand {
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding: 0 10px;
+            margin-top: -15px;
+            @media (min-width: 768px) {
+                float: left;
+                width: auto;
+            }
+
+            img {
+                width: 80px;
+            }
+        }
+
+        a {
+            color: #000 !important;
+            text-transform: uppercase;
+            text-align: center;
+
+            &.active,
+            &.active:hover,
+            &.active:focus {
+                text-decoration: underline;
+            }
+        }
+
+        ul {
+            @extend .nav;
+            @extend .navbar-nav;
+            @extend .navbar-right;
+
+            li a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
