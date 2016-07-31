@@ -1,8 +1,15 @@
 .tab-pane {
 
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     &:not(.active) {
         display: none;
+    }
+
+    .entry-box {
+        width: 200px;
     }
 }
