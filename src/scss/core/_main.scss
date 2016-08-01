@@ -1,9 +1,12 @@
 body {
     text-align: center;
     margin: 20px auto;
+    background-color: $background-color;
+    font-family: 'Raleway', sans-serif;
 
     @media (min-width: 768px) {
         width: $site-width;
         padding-top: 100px;
         }
+
 }

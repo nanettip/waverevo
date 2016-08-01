@@ -2,15 +2,16 @@ body > header > nav {
     @extend .navbar;
     @extend .navbar-default;
 
-    background-color: #fff;
-    border-width: 1px;
+    background-color: $second-bg-color;
+    border: 1px solid #fff;
+    border-radius: 0;
     left: 0;
     right: 0;
     padding: 20px;
     padding-bottom: 5px;
     z-index: 1;
     top: 0;
-    margin: 20px auto;
+    margin: 0px auto;
 
     @media (min-width: 768px) {
         width: $site-width;
@@ -39,7 +40,7 @@ body > header > nav {
         }
 
         a {
-            color: #000 !important;
+            color: #fff !important;
             text-transform: uppercase;
             text-align: center;
 
