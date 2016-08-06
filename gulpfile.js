@@ -45,18 +45,13 @@ gulp.task("img", ['clean'], function() {
         .pipe(gulp.dest('dist/assets/img'));
 });
 
-gulp.task('icons', ['clean'], function() {
-    return gulp.src('bower_components/font-awesome-sass/assets/fonts/font-awesome/**.*')
-        .pipe(gulp.dest('dist/assets/fonts'));
-});
-
 gulp.task('watch', function () {
     doUglify = false;
 
-    gulp.watch("src/scss/**/*.scss", ['sass', 'html', 'js', 'img', 'icons']);
-    gulp.watch("src/*.html", ['sass', 'html', 'js', 'img', 'icons']);
-    gulp.watch("src/js/**/*.js", ['sass', 'html', 'js', 'img', 'icons']);
-    gulp.watch("src/img/*", ['sass', 'html', 'js', 'img', 'icons']);
+    gulp.watch("src/scss/**/*.scss", ['sass', 'html', 'js', 'img']);
+    gulp.watch("src/*.html", ['sass', 'html', 'js', 'img']);
+    gulp.watch("src/js/**/*.js", ['sass', 'html', 'js', 'img']);
+    gulp.watch("src/img/*", ['sass', 'html', 'js', 'img']);
 });
 
-gulp.task('default', ['sass', 'html', 'js', 'img', 'icons']);
+gulp.task('default', ['sass', 'html', 'js', 'img']);
