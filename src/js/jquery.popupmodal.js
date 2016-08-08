@@ -6,4 +6,6 @@ $.fn.popupModal = function (settings) {
     settings.modal.click(function() {
         settings.modal.removeClass('open');
     });
+
+    return this;
 };
