@@ -16,7 +16,7 @@
                 <a class="navbar-brand" href="#"><img src="/assets/img/logo.png" /></a>
                 <ul>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#characters">Members</a></li>
                     <li><a href="#links">Links</a></li>
                 </ul>
             </div>
@@ -91,44 +91,44 @@
     <div id="characters" class="container-fluid content-box">
         <div class="row">
             <h3>Current Members</h3>
-            <div class="char-section">
-                <div class="char-block">
+            <div class="char-section" id="current">
+                <div class="char-block" id="arietta">
                     <img src="/assets/img/arithumb.png" />
                     <h4 class="ari">Arietta</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="azuru">
                     <img src="/assets/img/azuthumb.png" />
                     <h4 class="azu">Azuru</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="codephoenix">
                     <img src="/assets/img/codethumb.png" />
                     <h4 class="code">CodePhoenixVA</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="kanono">
                     <img src="/assets/img/kanthumb.png" />
                     <h4 class="kan">Kanono</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="knerrvana">
                     <img src="/assets/img/knerrthumb.png" />
                     <h4 class="knerr">Knerrvana</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="red">
                     <img src="/assets/img/redthumb.png" />
                     <h4 class="red">RedAsATomato</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="refu">
                     <img src="/assets/img/refuthumb.png" />
                     <h4 class="refu">&#12524 &#12501 [Refu]</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="rhonos">
                     <img src="/assets/img/rhothumb.png" />
                     <h4 class="rho">Rhonos</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="samine">
                     <img src="/assets/img/samithumb.png" />
                     <h4 class="sami">SingingSamine</h4>
                 </div>
-                <div class="char-block">
+                <div class="char-block" id="pancake">
                     <img src="/assets/img/panthumb.png" />
                     <h4 class="pan">SuperPancake</h4>
                 </div>
@@ -173,63 +173,66 @@
     </footer>
     <div id="char-modal-backdrop" style="visibility: hidden">
         <div id="char-modal-contents">
-            <div id="char-sheet" class="scrollable">
+            <div id="char-sheet" class="scrollable char-info">
+                <button class="close">&times;</button></div>
             </div>
         </div>
     </div>
     <script src="/assets/js/app.js?v=<!-- @echo assetVersion -->"></script>
     <script src="https://use.fontawesome.com/f823682098.js"></script>
     <script id="char-template" type="text/x-handlebars-template">
-        {{{header}}}
-        <div class="info-stats">
-            <div class="name">
-                <div class="block1">Name</div>
-                <div class="block2">{{name}}</div>
+        <div class="character">
+            {{{header}}}
+            <div class="info-stats">
+                <div class="name">
+                    <div class="block1">Name</div>
+                    <div class="block2">{{name}}</div>
+                </div>
+                <div class="position">
+                  <div class="block1">Position</div>
+                  <div class="block2">{{position}}</div>
+                </div>
+                <div class="class">
+                    <div class="block1">Class</div>
+                    <div class="block2">{{class}}</div>
+                </div>
+                <div class="subclass">
+                    <div class="block1">Subclass</div>
+                    <div class="block2">{{subclass}}</div>
+                </div>
             </div>
-            <div class="position">
-                <div class="block1">Position</div>
-                <div class="block2">{{position}}</div>
-            </div>
-            <div class="class">
-                <div class="block1">Class</div>
-                <div class="block2">{{class}}</div>
-            </div>
-            <div class="subclass">
-                <div class="block1">Subclass</div>
-                <div class="block2">{{subclass}}</div>
-            </div>
+            <div class="bar1">Weapon of Choice</div>
+            <div class="bar2">{{weapon}}</div>
+            <ul class="list-box1">
+                <li class="title-box">{{classUsage}}</li>
+                <li>{{classUsageText}}</li>
+                <li class="title-box">{{subclassUsage}}</li>
+                <li>{{subclassUsageText}}</li>
+            </ul>
+            <div class="bar1">Hobbies</div>
+            <ul class="hobbies">
+                {{{hobbies}}}
+            </ul>
+            <ul class="list-box2">
+                <li class="title-box">Likes</li>
+                <li>
+                    <ul>
+                        {{{likes}}}
+                    </ul>
+                </li>
+                <li class="title-box">Dislikes</li>
+                <li>
+                    <ul>
+                        {{{dislikes}}}
+                    </ul>
+                </li>
+            </ul>
+            <div class="bar1">Bio</div>
+            {{{bio}}}
+            {{{quote}}}
+            {{{footer}}}
+            {{{image}}}
         </div>
-        <div class="bar1">Weapon of Choice</div>
-        <div class="bar2">{{weapon}}</div>
-        <ul class="list-box1">
-            <li class="title-box">{{classUsage}}</li>
-            <li>{{classUsageText}}</li>
-            <li class="title-box">{{subclassUsage}}</li>
-            <li>{{subclassUsageText}}</li>
-        </ul>
-        <div class="bar1">Hobbies</div>
-        <ul class="hobbies">
-            {{{hobbies}}}
-        </ul>
-        <ul class="list-box2">
-            <li class="title-box">Likes</li>
-            <li>
-                <ul>
-                    {{{likes}}}
-                </ul>
-            </li>
-            <li class="title-box">Dislikes</li>
-            <li>
-                <ul>
-                    {{{dislikes}}}
-                </ul>
-            </li>
-        </ul>
-        <div class="bar1">Bio</div>
-        {{{bio}}}
-        {{{quote}}}
-        {{{footer}}}
-        {{{image}}}
     </script>
 </body>
 

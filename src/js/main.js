@@ -2,7 +2,7 @@ $(function () {
 
     var waveRevo = {
         arietta: {
-            header: '<div class="char-header" style="background-color: #307d7e;"><h1>Butterfly Empress</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #307d7e;"><h1>Butterfly Empress</h1><h6>T i t l e</h6></div>',
             name: "Arietta",
             position: "Party Leader",
             class: "[Imperator]",
@@ -21,7 +21,7 @@ $(function () {
             image: '<img src="/assets/img/arilsor1.png" />'
         },
         azuru: {
-            header: '<div class="char-header" style="background-color: #8b99ab;"><h1>Sinnabun</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #8b99ab;"><h1>Sinnabun</h1><h6>T i t l e</h6></div>',
             name: "Azuru",
             position: "DPS/Reality Check",
             class: "[Dragoon]",
@@ -40,7 +40,7 @@ $(function () {
             image: '<img src="/assets/img/azulsor1.png" style="width: 441px; right: -85px;"/>'
         },
         refu: {
-            header: '<div class="char-header" style="background-color: #d68837;"><h1>Mother of Darkness</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #d68837;"><h1>Mother of Darkness</h1><h6>T i t l e</h6></div>',
             name: "&#12524 &#12501 [Refu]",
             position: "DPS/Party Scouter",
             class: "[Demon Lord]",
@@ -59,7 +59,7 @@ $(function () {
             image: '<img src="/assets/img/refulsor1.png" />'
         },
         kanono: {
-            header: '<div class="char-header" style="background-color: #ffa62f;"><h1>Puddle</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #ffa62f;"><h1>Puddle</h1><h6>T i t l e</h6></div>',
             name: "Kanono",
             position: "Accountant",
             class: "[Shape-Shifter]",
@@ -78,7 +78,7 @@ $(function () {
             image: '<img src="/assets/img/kanlsor1.png" style="width: 336px; right: -16px;" />'
         },
         red: {
-            header: '<div class="char-header" style="background-color: #ff6347;"><h1>Small Medium at Large</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #ff6347;"><h1>Small Medium at Large</h1><h6>T i t l e</h6></div>',
             name: "Redasatomato [Jane]",
             position: "Defense/Guild Memer",
             class: "[Monk]",
@@ -97,7 +97,7 @@ $(function () {
             image: '<img src="/assets/img/redlsor1.png" style="width: 310px; right: -16px;" />'
         },
         samine: {
-            header: '<div class="char-header" style="background-color: #3bb9ff;"><h1>Sweet & Sour</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #3bb9ff;"><h1>Sweet & Sour</h1><h6>T i t l e</h6></div>',
             name: "Samine",
             position: "DPS/Inventory Clerk",
             class: "[Thief]",
@@ -116,7 +116,7 @@ $(function () {
             image: '<img src="/assets/img/samilsor1.png" style="width: 377px; right: -57px;" />'
         },
         codephoenix: {
-            header: '<div class="char-header" style="background-color: #2b3856;"><h1>Boytoy</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #2b3856;"><h1>Boytoy</h1><h6>T i t l e</h6></div>',
             name: "CodePhoenixVA",
             position: "DPS/Stylish Elf",
             class: "[Gunslinger]",
@@ -135,7 +135,7 @@ $(function () {
             image: '<img src="/assets/img/codelsor1.png" style="width: 377px; right: -57px;" />'
         },
         rhonos: {
-            header: '<div class="char-header" style="background-color: #7a2eaa;"><h1>Eggplant Knight</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #7a2eaa;"><h1>Eggplant Knight</h1><h6>T i t l e</h6></div>',
             name: "Rhonos",
             position: "Tank/Fantasy Indulger",
             class: "[Knight]",
@@ -154,7 +154,7 @@ $(function () {
             image: '<img src="/assets/img/rholsor1.png" style="width: 426px; right: -110px;" />'
         },
         knerrvana: {
-            header: '<div class="char-header" style="background-color: #8b0000;"><h1>The Red Comet</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #8b0000;"><h1>The Red Comet</h1><h6>T i t l e</h6></div>',
             name: "Knerrvana",
             position: "Tank/Front Lines",
             class: "[Traitor Paladin]",
@@ -173,7 +173,7 @@ $(function () {
             image: '<img src="/assets/img/knerrlsor1.png" style="width: 385px; right: -97px;" />'
         },
         pancake: {
-            header: '<div class="char-header" style="background-color: #ffcc98;"><h1>Hot Cheerleader</h1><h6>T i t l e</h6><button class="close">&times;</button></div>',
+            header: '<div class="char-header" style="background-color: #ffcc98;"><h1>Hot Cheerleader</h1><h6>T i t l e</h6></div>',
             name: "Superpancake",
             position: "DPS/Cheerleader",
             class: "[Hunter]",
@@ -201,8 +201,7 @@ $(function () {
     var charModal = body.find("#char-modal-backdrop");
     var templateSource = $('#char-template').html();
     var template = Handlebars.compile(templateSource);
-    var currentChar = waveRevo.pancake;
-    $('#char-sheet').html(template(currentChar));
+    var charList = characters.find(".row #current .char-block");
 
     tabs.find("li a")
         .click(function (e) {
@@ -218,8 +217,20 @@ $(function () {
             offset: offset
         });
 
-    characters.find(".row .char-section .char-block")
+    charList
         .popupModal({
             modal: charModal
         });
+
+    charList.click(function (event) {
+        var currentChar = waveRevo[$(this).attr('id')];
+        var result = $(template(currentChar));
+
+        result.data("character", currentChar);
+        charModal.find(".character").remove();
+        charModal.find(".char-info").append(result);
+
+        event.preventDefault();
+        return false;
+    });
 });
